@@ -28,10 +28,6 @@ router.post('/renewPassword', (req, res) => {
   userController.renewPassword(req, res);
 });
 
-router.get('/listProjectsByUser/:id', jwtMiddleware, (req, res) => {
-  userController.listProjectsByUser(req, res);
-});
-
 router.post('/updateUser', jwtMiddleware, (req, res) => {
   userController.updateUser(req, res);
 });

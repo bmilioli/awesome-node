@@ -7,7 +7,6 @@ import cors from 'cors';
 
 import userRoute from './src/routes/user.route';
 import fileRoute from './src/routes/file.route';
-import projectRoute from './src/routes/project.route';
 
 const server = express();
 const port = config.PORT;
@@ -30,12 +29,10 @@ server.use(cors({ origin: config.origin, credentials: true }));
 
 server.use('/user', userRoute);
 server.use('/file', fileRoute);
-server.use('/project', projectRoute);
 
 server.listen(port, async () => {
   await new Promise((resolve, reject) => setTimeout(resolve, 1000));
   console.clear();
   console.log('Product by: Milioli Solutions');
   console.log('----------------------------------------');
-  console.log(`FilmList APIs is running on port ${port}!`);
 });
