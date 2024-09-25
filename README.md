@@ -6,6 +6,7 @@ Feel free to explore the code, provide feedback, or suggest improvements. I’m 
 
 ## Features
 
+- **MongoD** for Database
 - **AWS S3** for image storage
 - **Express** for routing and server management
 - **bcrypt** for password hashing and security
